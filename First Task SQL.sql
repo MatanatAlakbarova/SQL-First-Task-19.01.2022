@@ -48,6 +48,9 @@ SELECT MIN (Salary)'Minimum Salary For Company' FROM Workers
 SELECT * FROM Workers
 	WHERE Salary> (SELECT AVG (Salary) FROM Workers) AND Age >= 24 
 
+SELECT Name 'FirstName',Surname 'LastName',Salary FROM Workers
+	WHERE Salary> (SELECT AVG (Salary) FROM Workers)
+
 SELECT * FROM Workers
     WHERE Position='Musician' AND Salary > 350
 
