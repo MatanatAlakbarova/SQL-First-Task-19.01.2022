@@ -57,8 +57,12 @@ SELECT * FROM Workers
 SELECT * FROM Workers
 	WHERE Gender= 'Male' AND Salary>500
 
+SELECT * FROM Workers
+ORDER BY Surname 
+OFFSET 1 ROWS
+FETCH NEXT 5 ROWS ONLY
+	
 DROP TABLE Workers
-	 
 
 
 
